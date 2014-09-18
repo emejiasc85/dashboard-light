@@ -1,0 +1,56 @@
+@import "nib"
+vendor-prefixes = webkit o ms moz official
+// animacion(parametro)
+// 	-webkit-animation parametro
+// 	-moz-animation parametro
+// 	-o-animation parametro
+// 	-ms-animation parametro
+// 	animation parametro
+/*utilidades*/
+
+
+
+body
+	background green
+	background-image url('../skins/skin-kiwi.jpg')
+	background-repeat no-repeat
+	background-size cover
+	color #fff
+	font-size 16px
+.Header
+	border-bottom 1px solid rgba(white .7)
+	font-size 0
+	height  3rem
+	margin 0
+.Header-DropBottom
+	background-color rgba(black, .6)
+	color white
+	display inline-block
+	font-size 1rem
+	height 3rem
+	line-height 3rem
+	text-align center
+	text-decoration none
+	width 3rem
+
+.Header-brand
+	background-color rgba(black, .4)
+	color white
+	display inline-block
+	font-size 1rem
+	font-weight 300
+	height 3rem
+	line-height 3rem
+	padding 0 2rem
+	text-align center
+	text-decoration none
+	text-shadow 0 0 3px rgba(255,255,255,0.4)
+	transition 1s color
+	font-family 'existencelight', sans-serif
+	&:hover
+		color rgba(yellow, .7)
+
+.HeaderNav
+	display inline-block
+.HeaderNav-item
+	display inline-block
