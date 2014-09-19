@@ -3,27 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>dashboard</title>
-	
-	<link rel="stylesheet" href="../static/css/stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../static/css/normalize-3.0.1.css">
 	<link rel="stylesheet" href="../static/css/icon.css">
 	<link rel="stylesheet" href="../static/css/dashboard_style.css">
 </head>
 <body>
 	<header class="Header">
-		<a href="" class="Header-DropBottom icon-menu"></a>
-		<a href="" class="Header-brand icon-">Dashboard</a>
-		<nav class="HeaderNav">
+		<div class="Header-box">
+			<a href="" class="Header-DropBottom"><span class="icon-menu"></span> </a>
+			<a href="" class="Header-brand"> <span class=""></span>Dashboard Brand</a>
+		</div>		
+		<nav class="HeaderNav u-float-right">
 			<ul class="HeaderNav-list">
 				<li class="HeaderNav-item">
-					<a href="" class="HeaderNav--link icon-bell"><span class="icon-span">5</span></a>
+					<a href="" class="HeaderNav-link icon-mail"><span class="u-icon-span">15</span></a>
 				</li>
 				<li class="HeaderNav-item">
-					<a href="" class="HeaderNav--link icon-search"></a>
+					<a href="" class="HeaderNav-link icon-bell"><span class="u-icon-span">5</span></a>
+				</li>
+				<li class="HeaderNav-item">
+					<figure id="submenu-avatar" class="Header-imageContainer">
+						<img src="../static/images/avatar.jpg" alt="" class="Header-avatar">
+					</figure>
+					<ul class="HeaderNav-subList">
+						<li class="HeaderNav-subItem">
+							<a href="" class="HeaderNav-subLink"><span class="HeaderNav-subIcon icon-user"></span>Perfil</a>
+						</li>
+						<li class="HeaderNav-subItem">
+							<a href="" class="HeaderNav-subLink"><span class="HeaderNav-subIcon icon-exit"></span>Salir</a>
+						</li>
+						<li class="HeaderNav-subItem">
+							<a href="" class="HeaderNav-subLink"><span class="HeaderNav-subIcon icon-padlock"></span>Contraseña</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</nav>
 	</header>
-	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="../static/js/dashboard.js"></script>
 </body>
 </html>
