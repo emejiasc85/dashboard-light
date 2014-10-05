@@ -2,10 +2,12 @@ var $avatar 		= $('#submenu-avatar'),
 	$subMenuAvatar 	= $('.HeaderNav-subList'),
 	$menuItem 		= $('.MainMenu-item'),
 	$MainMenu 		= $('.MainMenu'),
-	$dropMainMenu	= $('.Header-DropBottom')
+	$dropMainMenu	= $('.Header-DropBottom'),
+	$dropDown		= $('#dropDown'),
+	$dropDownList	= $('#dropDownList')
 
 
-//mostramos el formulario de denucias
+
 function toggleSubMenu() {
 	$subMenuAvatar.slideToggle('fast')
 	return false
@@ -28,8 +30,14 @@ $('.MainMenu-subList').on('click', function (event) {
     event.stopPropagation();
 });
 
+//mostramos los drop downs
+function dropDown(){
+	$(this).children('#dropDownList').toggle('fast');
+}
+
 $menuItem.on('click', viewSubMenu)
 $avatar.on('click', toggleSubMenu)
 $dropMainMenu.on('click', toggleMainMenu)
+$dropDown.on('click', dropDown)
 
 
