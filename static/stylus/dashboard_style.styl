@@ -7,10 +7,14 @@ vendor-prefixes = webkit o ms moz official
 // 	-ms-animation parametro
 // 	animation parametro
 /*utilidades*/
+azul = #4A72B0
+
 .u-float-left
 	float left
 .u-float-right
 	float right
+.u-bg-black-light
+	background-color rgba(black, .9)
 .u-icon-span
 	background #f00
 	border-radius 2px
@@ -27,7 +31,7 @@ body
 	background #2B6474
 	color #fff
 	font-size 16px
-	text-shadow 0 0 3px rgba(255,255,255,0.4)	
+	text-shadow 0 0 3px rgba(255,255,255,0.4)
 .Header
 	border-bottom 1px solid rgba(255,255,255,0.3)
 	font-size 0
@@ -275,8 +279,9 @@ body
 
 /*panels*/
 .Panel 
-	margin .5em
+	margin .5em .5em 0 .5em
 	position relative
+	
 .Panel-title-dark
 .Panel-footer-dark
 	background-color rgba(black, .35)
@@ -318,6 +323,14 @@ body
 	transition .3s color
 	&:hover
 		color yellow
+.Panel-link 
+	text-decoration none
+	color white
+	text-shadow none
+	transition .3s text-decoration
+	&:hover
+		text-decoration underline
+
 
 /*drop downs box*/	
 .DropDown-list
@@ -348,39 +361,79 @@ body
 		text-decoration underline
 
 /*forms*/
-.Form-horizontal
+.Form
 	margin 0
 	padding 0
 .Form-group
 	margin-bottom 0
-	padding .5em .5em .5em 0
-.Form-label-horizontal
-	display block
-	font-weight 300
-	margin-bottom .2em
-	text-shadow none
-	text-transform uppercase
-.Form-input-horizontal
-	background-color rgba(white, .2)
-	border 1px solid rgba(black, .3)
-	display block
-	font-size 1.2em
-	font-weight 300
-	padding-left .5em
-	width 100%
-.Form-radio-horizontal
+	padding .5em
+.Form-label
+	cursor pointer
 	display inline-block
+	font-size .7em
+	font-weight 300
+	margin-bottom .5em
+	text-transform uppercase
+.Form-control
+	background-color rgba(black, 0.05)
+	border 1px solid rgba(white, .3)
+	box-sizing border-box
+	display block
+	font-size 1em
+	font-weight 300
+	height 2em
+	line-height 2em
+	outline none
+	padding-left .5em
+	transition .3s background 
+	transition .3s border
+	width 100% 
+.Form-input-vertical
+	padding-left .5em
+	&:focus
+		background rgba(black 0 )
+		border 1px solid rgba(white, .4)
+.Form-select
+	cursor context-menu
+	line-height normal !important
+	text-indent 1px
+.Form-option
+	background-color rgba(black, .9)
+	margin .5em 0
+.Form-radio
 	color red
-
-
-
-
-	
-
-	
-
-
-
+	display inline-block
+	height 1.5em
+	line-height 1.5em
+	vertical-align top
+	width 1.2em
+.Button
+	border 0
+	cursor pointer
+	display inline-block
+	font-weight 300
+	height 2em
+	line-height 2em
+	padding 0 .5em
+	text-decoration none
+	text-transform uppercase
+	transition 0.2s background-color
+	vertical-align top
+	/*zoom 1*/
+	&:active
+		transform scale(.95)
+.BTN-form
+	background linear-gradient(to bottom, rgba(black,.2) 0%, rgba(black,1) 100%)
+	color white
+	font-size 16px
+	transition .3s color
+	&:hover
+		box-shadow 0 0 3px rgba(white,.4)
+		color yellow
+		text-shadow 0 0 3px rgba(white,.4)
+	&:focus
+		outline 1px solid rgba(white, .35)
+		
 @media screen and (min-width:480px)
 	.u-hidden-s
 		display none

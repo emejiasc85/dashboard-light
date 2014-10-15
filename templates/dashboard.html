@@ -160,35 +160,52 @@
 		<section class="Panel">
 			<h2 class="Panel-title-dark">Formulario Horizontal</h2>
 			<div class="Panel-content-light">
-				<form action="" class="Form-horizontal">
+				<form action="" class="Form">
 					<div class="Form-group">
-						<label for="" class="Form-label-horizontal">nombre</label>
-						<input type="text" class="Form-input-horizontal">
+						<label for="" class="Form-label">nombre</label>
+						<input type="text" class="Form-control Form-input-vertical">
 					</div>
 					<div class="Form-group">
-						<label for="" class="Form-label-horizontal">apellido</label>
-						<input type="text" class="Form-input-horizontal"  placeholder="Escriba su Apellido.">
+						<label for="" class="Form-label">apellido</label>
+						<input type="text" class="Form-control Form-input-vertical"  placeholder="Escriba su Apellido.">
 					</div>
 					<div class="Form-group">
-						<label for="" class="Form-label-horizontal">direccion</label>
-						<input type="text" class="Form-input-horizontal">
+						<label for="" class="Form-label">direccion</label>
+						<input type="text" class="Form-control Form-input-vertical">
 					</div>
 					<div class="Form-group">
-						<label for="" class="Form-label-horizontal">masculino</label>
-						<input type="radio" class="Form-input-horizontal">
-						<label for="" class="Form-label-horizontal">femenino</label>
-						<input type="radio" class="Form-radio-horizontal">
+						<label for="" class="Form-label">seleccione una opcion</label>
+						<select class="Form-control Form-select">
+							<option class="Form-option" value="volvo"></option>
+							<option class="Form-option" value="saab">Saab</option>
+							<option class="Form-option" value="mercedes">Mercedes</option>
+							<option class="Form-option" value="audi">Audi</option>
+							<option class="Form-option" value="audi">Audi</option>
+							<option class="Form-option" value="audi">Audi</option>
+							<option class="Form-option" value="audi">ultimo</option>
+							<option class="Form-option" value="audi"></option>
+						</select>
 					</div>
-					<div class="form-group">
-						<input type="submit" class="Form-radio-horizontal" value="enviar">
+					<div class="Form-group">
+						<input type="radio" name="radio" class="Form-radio">
+						<label for="" class="Form-label">masculino</label>
+					</div>
+					<div class="Form-group">
+						<input type="radio" name="radio" class="Form-radio">
+						<label for="" class="Form-label">femenino</label>
+					</div>
+					<div class="Form-group">
+						<input type="checkbox" id="check" class="Form-radio">
+						<label for="check" class="Form-label">masculino</label>
+					</div>
+					<div class="Form-group">
+						<input type="submit" class="Button BTN-form"  value="enviar">
+						<input type="submit" class="Button BTN-form"  value="Salir">
 					</div>
 				</form>
 			</div>
 		</section>
-
-		
 	</section>
-	
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="../static/js/dashboard.js"></script>
 </body>
