@@ -6,8 +6,9 @@
  *    user zoom.
  */
 html {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  font-weight: 100;
   /*font-family: 'existencelight', sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */

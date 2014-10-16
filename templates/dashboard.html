@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>dashboard</title>
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../static/css/normalize-3.0.1.css">
 	<link rel="stylesheet" href="../static/css/icon.css">
 	<link rel="stylesheet" href="../static/css/dashboard_style.css">
+	
 </head>
 <body>
 	<header class="Header">
@@ -31,7 +32,7 @@
 							<a href="" class="HeaderNav-subLink"><span class="HeaderNav-subIcon icon-user"></span>Perfil</a>
 						</li>
 						<li class="HeaderNav-subItem">
-							<a href="" class="HeaderNav-subLink"><span class="HeaderNav-subIcon icon-outcoming"></span>Salir</a>
+							<a href="login.html" class="HeaderNav-subLink"><span class="HeaderNav-subIcon icon-outcoming"></span>Salir</a>
 						</li>
 						<li class="HeaderNav-subItem">
 							<a href="" class="HeaderNav-subLink"><span class="HeaderNav-subIcon icon-padlock"></span>Contraseña</a>
@@ -96,15 +97,15 @@
 		</ul>
 	</nav>
 	<section class="Content">
-		<section class="Notification">
+		<article class="Notification">
 			<h2 class="Page-title">Dasboard title</h2>
 			<ul class="Breadcrumb">
 				<li class="Breadcrumb-item"><a href="" class="Breadcrumb-link Breadcrumb-slash">page</a></li>
 				<li class="Breadcrumb-item"><a href="" class="Breadcrumb-link Breadcrumb-slash">page</a></li>
 				<li class="Breadcrumb-item"><a href="" class="Breadcrumb-link">page</a></li>
 			</ul>
-		</section>
-		<section class="ShortCuts-area">
+		</article>
+		<article class="ShortCuts-area">
 			<article class="ShortCut-item">
 				<h2 class="ShortCut-count">526</h2>
 				<p class="ShortCut-description">Redes</p>
@@ -125,86 +126,92 @@
 				<p class="ShortCut-description">Estadisticas</p>
 				<span class="ShortCut-icon icon-bars"></span>
 			</article>
-		</section>
-		<section class="Panel">
-			<h2 class="Panel-title-dark">Titulo</h2>
-			<div class="Panel-menu">
-				<ul class="Panel-menuList">
-					<li id="dropDown" class="Panel-menuItem">
-						<a href="#"  class="Panel-menuLink"><span class="icon-down"></span>
-						</a>
-						<ul  id="dropDownList" class="DropDown-list">
-							<li class="DropDown-item">
-								<a href="" class="DropDown-link">Filtrar</a>
-							</li>
-							<li class="DropDown-item">
-								<a href="" class="DropDown-link"> otro link</a>
-							</li>
-							<li class="DropDown-item">
-								<a href="" class="DropDown-link"> otro link</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class="Panel-content-light">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsam dolore accusamus laboriosam similique, ad neque facilis sapiente, dicta assumenda, accusantium ipsum corporis voluptate. Numquam, non. Veniam sequi nobis earum!
-			</div>
-			<h2 class="Panel-footer-dark">footer</h2>
-		</section>
-		<section class="Panel">
-			<div class="Panel-content-light">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsam dolore accusamus laboriosam similique, ad neque facilis sapiente, dicta assumenda, accusantium ipsum corporis voluptate. Numquam, non. Veniam sequi nobis earum!
-			</div>
-		</section>
-		<section class="Panel">
-			<h2 class="Panel-title-dark">Formulario Horizontal</h2>
-			<div class="Panel-content-light">
-				<form action="" class="Form">
-					<div class="Form-group">
-						<label for="" class="Form-label">nombre</label>
-						<input type="text" class="Form-control Form-input-vertical">
-					</div>
-					<div class="Form-group">
-						<label for="" class="Form-label">apellido</label>
-						<input type="text" class="Form-control Form-input-vertical"  placeholder="Escriba su Apellido.">
-					</div>
-					<div class="Form-group">
-						<label for="" class="Form-label">direccion</label>
-						<input type="text" class="Form-control Form-input-vertical">
-					</div>
-					<div class="Form-group">
-						<label for="" class="Form-label">seleccione una opcion</label>
-						<select class="Form-control Form-select">
-							<option class="Form-option" value="volvo"></option>
-							<option class="Form-option" value="saab">Saab</option>
-							<option class="Form-option" value="mercedes">Mercedes</option>
-							<option class="Form-option" value="audi">Audi</option>
-							<option class="Form-option" value="audi">Audi</option>
-							<option class="Form-option" value="audi">Audi</option>
-							<option class="Form-option" value="audi">ultimo</option>
-							<option class="Form-option" value="audi"></option>
-						</select>
-					</div>
-					<div class="Form-group">
-						<input type="radio" name="radio" class="Form-radio">
-						<label for="" class="Form-label">masculino</label>
-					</div>
-					<div class="Form-group">
-						<input type="radio" name="radio" class="Form-radio">
-						<label for="" class="Form-label">femenino</label>
-					</div>
-					<div class="Form-group">
-						<input type="checkbox" id="check" class="Form-radio">
-						<label for="check" class="Form-label">masculino</label>
-					</div>
-					<div class="Form-group">
-						<input type="submit" class="Button BTN-form"  value="enviar">
-						<input type="submit" class="Button BTN-form"  value="Salir">
-					</div>
-				</form>
-			</div>
-		</section>
+		</article>
+		<div class="col-6">
+			<article class="Panel">
+				<h2 class="Panel-title-dark">Titulo</h2>
+				<div class="Panel-menu">
+					<ul class="Panel-menuList">
+						<li id="dropDown" class="Panel-menuItem">
+							<a href="#"  class="Panel-menuLink"><span class="icon-down"></span>
+							</a>
+							<ul  id="dropDownList" class="DropDown-list">
+								<li class="DropDown-item">
+									<a href="" class="DropDown-link">Filtrar</a>
+								</li>
+								<li class="DropDown-item">
+									<a href="" class="DropDown-link"> otro link</a>
+								</li>
+								<li class="DropDown-item">
+									<a href="" class="DropDown-link"> otro link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="Panel-content-light">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsam dolore accusamus laboriosam similique, ad neque facilis sapiente, dicta assumenda, accusantium ipsum corporis voluptate. Numquam, non. Veniam sequi nobis earum!
+				</div>
+				<h2 class="Panel-footer-dark">footer</h2>
+			</article>
+			<article class="Panel">
+				<div class="Panel-content-light">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsam dolore accusamus laboriosam similique, ad neque facilis sapiente, dicta assumenda, accusantium ipsum corporis voluptate. Numquam, non. Veniam sequi nobis earum!
+				</div>
+			</article>
+			
+		</div>
+		<div class="col-6">
+			<article class="Panel">
+				<h2 class="Panel-title-dark">Formulario Horizontal</h2>
+				<div class="Panel-content-light">
+					<form action="" class="Form">
+						<div class="Form-group">
+							<label for="1" class="Form-label">nombre</label>
+							<input type="text" id="1" class="Form-control Form-input-vertical">
+						</div>
+						<div class="Form-group">
+							<label for="2" class="Form-label">apellido</label>
+							<input type="text" id="2" class="Form-control Form-input-vertical"  placeholder="Escriba su Apellido.">
+						</div>
+						<div class="Form-group">
+							<label for="3" class="Form-label">direccion</label>
+							<input type="text" id="3" class="Form-control Form-input-vertical">
+						</div>
+						<div class="Form-group">
+							<label for="" class="Form-label">seleccione una opcion</label>
+							<select class="Form-control Form-select">
+								<option class="Form-option" value="volvo"></option>
+								<option class="Form-option" value="saab">Saab</option>
+								<option class="Form-option" value="mercedes">Mercedes</option>
+								<option class="Form-option" value="audi">Audi</option>
+								<option class="Form-option" value="audi">Audi</option>
+								<option class="Form-option" value="audi">Audi</option>
+								<option class="Form-option" value="audi">ultimo</option>
+								<option class="Form-option" value="audi"></option>
+							</select>
+						</div>
+						<div class="Form-group">
+							<input type="radio" name="radio" class="Form-radio">
+							<label for="" class="Form-label">masculino</label>
+						</div>
+						<div class="Form-group">
+							<input type="radio" name="radio" class="Form-radio">
+							<label for="" class="Form-label">femenino</label>
+						</div>
+						<div class="Form-group">
+							<input type="checkbox" id="check" class="Form-radio">
+							<label for="check" class="Form-label">masculino</label>
+						</div>
+						<div class="Form-group">
+							<input type="submit" class="Button BTN-form"  value="enviar">
+							<input type="submit" class="Button BTN-form"  value="Salir">
+						</div>
+					</form>
+				</div>
+			</article>
+			
+		</div>
 	</section>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="../static/js/dashboard.js"></script>
