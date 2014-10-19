@@ -23,29 +23,17 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-coin:before {
-	content: "\e602";
+.icon-caution2:before {
+	content: "\e627";
 }
-.icon-users:before {
-	content: "\e622";
+.icon-correct7:before {
+	content: "\e628";
 }
-.icon-user:before {
-	content: "\e623";
+.icon-cross37:before {
+	content: "\e629";
 }
-.icon-stats:before {
-	content: "\e624";
-}
-.icon-bars:before {
-	content: "\e625";
-}
-.icon-tree:before {
-	content: "\e626";
-}
-.icon-user2:before {
-	content: "\e61f";
-}
-.icon-user22:before {
-	content: "\e620";
+.icon-eye44:before {
+	content: "\e62a";
 }
 .icon-address:before {
 	content: "\e600";
@@ -139,4 +127,28 @@
 }
 .icon-zoom:before {
 	content: "\e61e";
+}
+.icon-coin:before {
+	content: "\e602";
+}
+.icon-users:before {
+	content: "\e622";
+}
+.icon-user:before {
+	content: "\e623";
+}
+.icon-stats:before {
+	content: "\e624";
+}
+.icon-bars:before {
+	content: "\e625";
+}
+.icon-tree:before {
+	content: "\e626";
+}
+.icon-user2:before {
+	content: "\e61f";
+}
+.icon-user22:before {
+	content: "\e620";
 }

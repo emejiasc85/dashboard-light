@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>dashboard</title>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../static/css/normalize-3.0.1.css">
@@ -127,7 +128,147 @@
 				<span class="ShortCut-icon icon-bars"></span>
 			</article>
 		</article>
-		<div class="col-6">
+		
+		<div class="col-7">
+			<article class="Panel">
+				<h2 class="Panel-title-dark">Formulario Horizontal</h2>
+				<div class="Panel-content-light">
+					<form action="" class="Form">
+						<div class="Form-group">
+							<label for="1" class="Form-label">nombre</label>
+							<input type="text" id="1" class="col-12 Form-control Form-input-vertical"/>
+						</div>
+						<div class="Form-group">
+							<label for="2" class="Form-label">apellido</label>
+							<input type="text" id="2" class="col-12 Form-control Form-input-vertical"/>
+						</div>
+						<div class="Form-group">
+							<label for="3" class="Form-label">direccion</label>
+							<input type="text" id="3" class="col-12 Form-control Form-input-vertical"/>
+						</div>
+						<div class="Form-group">
+							<label for="" class="Form-label">seleccione una opcion</label>
+							<select class="col-12 Form-control Form-select">
+								<option class="Form-option" value="volvo"></option>
+								<option class="Form-option" value="saab">Saab</option>
+								<option class="Form-option" value="mercedes">Mercedes</option>
+								<option class="Form-option" value="audi">Audi</option>
+								<option class="Form-option" value="audi">Audi</option>
+								<option class="Form-option" value="audi">Audi</option>
+								<option class="Form-option" value="audi">ultimo</option>
+								<option class="Form-option" value="audi"></option>
+							</select>
+						</div>
+						<div class="Form-group">
+							<input type="radio" name="radio" class="Form-radio">
+							<label for="" class="Form-label">masculino</label>
+						</div>
+						<div class="Form-group">
+							<input type="radio" name="radio" class="Form-radio">
+							<label for="" class="Form-label">femenino</label>
+						</div>
+						<div class="Form-group">
+							<input type="checkbox" id="check" class="Form-radio">
+							<label for="check" class="Form-label">masculino</label>
+						</div>
+						<div class="Form-group">
+							<input type="submit" class="Button BTN-form"  value="enviar">
+							<input type="submit" class="Button BTN-form"  value="Salir">
+						</div>
+					</form>
+				</div>
+			</article>
+			<article class="Panel">
+				<h2 class="Panel-title-dark">Formularios sueltos</h2>
+				<div class="Panel-content-light">
+					<form action="" class="Form">
+						<div class="col-6 Form-group">
+							<input type="text" id="1" class="col-12 Form-control Form-input-vertical" placeholder="Nombres"/>
+						</div>
+						<div class="col-6 Form-group">
+							<input type="text" id="1" class="col-12 Form-control Form-input-vertical" placeholder="Apellidos"/>
+						</div>
+						<div class="col-6 Form-group">
+							<input type="date" id="3" class="col-12 Form-control Form-input-vertical" placeholder="Edad"/>
+						</div>
+						<div class="col-6 Form-group">
+							<input type="mail" id="3" class=" col-12 Form-control Form-input-vertical" placeholder="Email"/>
+						</div>
+						<div class="col-6 Form-group">
+							<select class="col-12 Form-control Form-select" placeholder="">
+								<option class="Form-option" value="">Departamento</option>
+								<option class="Form-option" value="saab">Saab</option>
+								<option class="Form-option" value="mercedes">Mercedes</option>
+							</select>
+						</div>
+						<div class="col-6 Form-group">
+							<select class="col-12 Form-control Form-select" placeholder="">
+								<option class="Form-option" value="">Municipio</option>
+								<option class="Form-option" value="saab">Saab</option>
+								<option class="Form-option" value="mercedes">Mercedes</option>
+							</select>
+						</div>
+						<div class="col-12 Form-group">
+							<textarea name="" id="" cols="30" rows="10" class="col-12 Form-control" placeholder="Direccion"></textarea>
+						</div>
+						<div class="col-3 Form-group">
+							<input type="radio" name="radio" class="Form-radio">
+							<label for="" class="Form-label">masculino</label>
+						</div>
+						<div class="col-3 Form-group">
+							<input type="radio" name="radio" class="Form-radio">
+							<label for="" class="Form-label">femenino</label>
+						</div>
+						<div class="col-3 Form-group">
+							<input type="checkbox" id="check" class="Form-radio">
+							<label for="check" class="Form-label">masculino</label>
+						</div>
+						<div class="Form-group">
+							<input type="submit" class="Button BTN-form"  value="enviar">
+							<input type="submit" class="Button BTN-form"  value="Salir">
+						</div>
+					</form>
+				</div>
+			</article>
+			<article class="Panel">
+				<table class="col-12 Table">
+					<tr class="Table-row">
+						<th class="Table-title">titulo</th>
+						<th class="Table-title">titulo</th>
+						<th class="Table-title">titulo</th>
+						<th class="Table-title">Estatus</th>
+					</tr>
+					<tr class="Table-row">
+						<td class="Table-field">campo</td>
+						<td class="Table-field">campo</td>
+						<td class="Table-field">campo</td>
+						<td class="Table-field Table-fieldPositive"><span class="icon-correct7"></span> Positivo</td>	
+					</tr>
+					<tr class="Table-row">
+						<td class="Table-field">campo</td>
+						<td class="Table-field">campo</td>
+						<td class="Table-field">campo</td>
+						<td class="Table-field Table-fieldNegative"><span class="icon-cross37"></span> Negativo</td>
+					</tr>
+					<tr class="Table-row">
+						<td class="Table-field">campo</td>
+						<td class="Table-field">campo</td>
+						<td class="Table-field">campo</td>
+						<td class="Table-field Table-fieldInfo"><span class="icon-eye44"></span> Info</td>
+					</tr>
+					<tr class="Table-row">
+						<td class="Table-field">campo</td>
+						<td class="Table-field">campo</td>
+						<td class="Table-field">campo</td>
+						<td class="Table-field Table-fieldDanger"><span class="icon-caution2"></span> Peligro</td>
+					</tr>
+				</table>
+			</article>
+		</div>
+
+
+
+		<div class="col-5">
 			<article class="Panel">
 				<h2 class="Panel-title-dark">Titulo</h2>
 				<div class="Panel-menu">
@@ -159,58 +300,6 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ipsam dolore accusamus laboriosam similique, ad neque facilis sapiente, dicta assumenda, accusantium ipsum corporis voluptate. Numquam, non. Veniam sequi nobis earum!
 				</div>
 			</article>
-			
-		</div>
-		<div class="col-6">
-			<article class="Panel">
-				<h2 class="Panel-title-dark">Formulario Horizontal</h2>
-				<div class="Panel-content-light">
-					<form action="" class="Form">
-						<div class="Form-group">
-							<label for="1" class="Form-label">nombre</label>
-							<input type="text" id="1" class="Form-control Form-input-vertical">
-						</div>
-						<div class="Form-group">
-							<label for="2" class="Form-label">apellido</label>
-							<input type="text" id="2" class="Form-control Form-input-vertical"  placeholder="Escriba su Apellido.">
-						</div>
-						<div class="Form-group">
-							<label for="3" class="Form-label">direccion</label>
-							<input type="text" id="3" class="Form-control Form-input-vertical">
-						</div>
-						<div class="Form-group">
-							<label for="" class="Form-label">seleccione una opcion</label>
-							<select class="Form-control Form-select">
-								<option class="Form-option" value="volvo"></option>
-								<option class="Form-option" value="saab">Saab</option>
-								<option class="Form-option" value="mercedes">Mercedes</option>
-								<option class="Form-option" value="audi">Audi</option>
-								<option class="Form-option" value="audi">Audi</option>
-								<option class="Form-option" value="audi">Audi</option>
-								<option class="Form-option" value="audi">ultimo</option>
-								<option class="Form-option" value="audi"></option>
-							</select>
-						</div>
-						<div class="Form-group">
-							<input type="radio" name="radio" class="Form-radio">
-							<label for="" class="Form-label">masculino</label>
-						</div>
-						<div class="Form-group">
-							<input type="radio" name="radio" class="Form-radio">
-							<label for="" class="Form-label">femenino</label>
-						</div>
-						<div class="Form-group">
-							<input type="checkbox" id="check" class="Form-radio">
-							<label for="check" class="Form-label">masculino</label>
-						</div>
-						<div class="Form-group">
-							<input type="submit" class="Button BTN-form"  value="enviar">
-							<input type="submit" class="Button BTN-form"  value="Salir">
-						</div>
-					</form>
-				</div>
-			</article>
-			
 		</div>
 	</section>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
