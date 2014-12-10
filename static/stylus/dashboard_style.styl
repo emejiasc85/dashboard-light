@@ -8,7 +8,15 @@ vendor-prefixes = webkit o ms moz official
 // 	-ms-animation parametro
 // 	animation parametro
 /*utilidades*/
-azul = #4A72B0
+azul 			= #08ABEE
+azulOscuro 		= #0680B3
+verde 			= #97C941
+verdeOscuro 	= #7DA836
+rojo 			= #E84C3D
+rojoOscuro 		= #BF3D30
+amarillo 		= #FCC33C
+amarilloOscuro 	= #CEA231
+
 .u-float-none
 	float none
 .u-float-left
@@ -83,7 +91,7 @@ body
 	transition .3s color
 	vertical-align top
 	&:hover
-		color yellow
+		color amarillo
 /*estilos a los menus que se encuentran en el header*/
 .HeaderNav
 	display inline-block
@@ -139,7 +147,7 @@ body
 	transition .3s color
 	&:hover
 		background-color rgba(black, .5)
-		color yellow
+		color amarillo
 .HeaderNav-subIcon			
 	color white
 	font-size 1.5rem
@@ -178,7 +186,7 @@ body
 	padding 0
 .MainMenu-link
 	/*color white*/
-	color yellow
+	color amarillo
 	display block
 	height 2.5em
 	line-height 2.5em
@@ -188,7 +196,7 @@ body
 	vertical-align top
 	&:hover
 		background-color rgba(black, .7)
-		/*color yellow*/
+		/*color amarillo*/
 		color white
 .MainMenu-icon
 	background-color rgba(black, .5)
@@ -261,12 +269,18 @@ body
 	text-decoration none
 	transition .3s color
 	&:hover
-		color yellow
+		color amarillo
 /*short cuts*/
 .ShortCuts-area
 	border-bottom 1px solid rgba(255,255,255,0.1)
 	padding 1em .5em
 	text-shadow none
+.ShortCut-link
+	text-decoration none
+	color white
+	&:active
+		transform scale(.95)
+	
 .ShortCut-item
 	background rgba(black, .35)
 	display inline-block
@@ -275,6 +289,9 @@ body
 	overflow hidden
 	position relative
 	width 48%
+	transition .3s background
+	&:hover
+		background rgba(black, .45)
 .ShortCut-count
 	padding-left .2em
 	font-size 2em
@@ -292,6 +309,7 @@ body
 	position absolute
 	right 0
 	top 0
+	
 
 /*panels*/
 .Panel 
@@ -339,7 +357,7 @@ body
 	text-decoration none
 	transition .3s color
 	&:hover
-		color yellow
+		color amarillo
 .Panel-link 
 	color white
 	font-size .8em
@@ -347,7 +365,7 @@ body
 	text-shadow none
 	transition .3s color
 	&:hover
-		color yellow
+		color amarillo
 .Panel-container-image
 	margin 0
 	padding 0
@@ -363,8 +381,7 @@ body
 
 /*drop downs box*/	
 .DropDown-list
-	background red
-	background-color rgba(white, .6)
+	background-color white
 	display none
 	margin 0
 	padding 0
@@ -467,27 +484,27 @@ body
 	border-right 1px solid rgba(grey, .3)
 	&:last-child
 		border-right none
-.Table-fieldPositive
-	border-left 2px solid yellowgreen
-	color yellowgreen
+.Table-fieldSuccess
+	border-left 2px solid verde
+	color verde
 	font-family sans-serif
 	font-weight bold
 	text-shadow none
 .Table-fieldNegative
-	border-left 2px solid tomato
-	color tomato
+	border-left 2px solid rojo
+	color rojo
 	font-family sans-serif
 	font-weight bold
 	text-shadow none
 .Table-fieldDanger
-	border-left 2px solid goldenrod
-	color goldenrod
+	border-left 2px solid amarillo
+	color amarillo
 	font-family sans-serif
 	font-weight bold
 	text-shadow none
 .Table-fieldInfo
-	border-left 2px solid dodgerblue
-	color dodgerblue
+	border-left 2px solid azul
+	color azul
 	font-family sans-serif
 	font-weight bold
 	text-shadow none
@@ -519,10 +536,56 @@ body
 	transition .3s color
 	&:hover
 		box-shadow 0 0 3px rgba(white,.4)
-		color yellow
+		color amarillo
 		text-shadow 0 0 3px rgba(white,.4)
 	&:focus
 		outline 1px solid rgba(white, .35)
+.BTN-link-success
+	background-color verde
+	border-bottom 2px solid verdeOscuro
+	color white
+	margin .5em
+	&:hover
+		background-color rgba(verde, .7)
+		border-bottom 2px solid transparent
+	&:focus
+		outline none
+.BTN-link-info
+	background-color azul
+	border-bottom 2px solid azulOscuro
+	color white
+	margin .5em
+	&:hover
+		background-color rgba(azul, .7)
+		border-bottom 2px solid transparent
+	&:focus
+		outline none
+.BTN-link-negative
+	background-color rojo
+	border-bottom 2px solid rojoOscuro
+	color white
+	margin .5em
+	&:hover
+		background-color rgba(rojo, .7)
+		border-bottom 2px solid transparent
+	&:focus
+		outline none
+.BTN-link-danger
+	background-color amarillo
+	border-bottom 2px solid amarilloOscuro
+	color white
+	margin .5em
+	&:hover
+		background-color rgba(amarillo, .7)
+		border-bottom 2px solid transparent
+	&:focus
+		outline none
+
+
+
+	
+	
+	
 		
 @media screen and (min-width:480px)
 	.u-hidden-s
@@ -542,7 +605,7 @@ body
 		
 @media screen and (min-width:768px)
 	body
-		background url('../skins/skin-blue.jpg')
+		background url('../skins/index-background.jpg')
 		background-attachment fixed
 		background-size 100% 100%
 		height 3rem
@@ -569,7 +632,7 @@ body
 		color white
 		transition .3s color
 		&:hover
-			color yellow
+			color amarillo
 @media screen and (min-width:1000px)
 	.ShortCut-item
 		margin-left 1.5%
