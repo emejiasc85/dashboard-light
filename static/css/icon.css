@@ -23,6 +23,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-graduate2:before {
+	content: "\e61e";
+}
 .icon-bell6:before {
 	content: "\e618";
 }
@@ -133,6 +136,9 @@
 }
 .icon-users:before {
 	content: "\e622";
+}
+.icon-suit:before {
+	content: "\e623";
 }
 .icon-stats:before {
 	content: "\e624";
