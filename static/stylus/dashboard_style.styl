@@ -17,6 +17,9 @@ rojoOscuro 		= #BF3D30
 amarillo 		= #FCC33C
 amarilloOscuro 	= #CEA231
 
+option
+	background-color rgba(black, .9)
+	margin .5em 0
 .u-float-none
 	float none
 .u-float-left
@@ -35,6 +38,8 @@ amarilloOscuro 	= #CEA231
 	position absolute
 	right 5px
 	top 4px
+.u-td-sm
+.u-td-md
 .u-display-none
 	display none
 .u-position-relative
@@ -231,6 +236,10 @@ body
 	display block
 	line-height 2em
 	text-decoration none
+	background none
+	border none
+	padding 0
+	margin 0
 	transition 3s text-decoration
 	&:hover
 		text-decoration underline
@@ -465,6 +474,7 @@ body
 	line-height 2em
 	&:last-child
 		border-bottom none
+		border-right none
 	&:nth-child(odd)
 		background-color rgba(black, .2)
 		
@@ -476,6 +486,8 @@ body
 	text-align left
 	padding 0 .5em
 	border-right 1px solid rgba(grey, .3)
+	&:last-child
+		border-right none
 .Table-field
 	text-shadow none
 	font-weight 100
@@ -640,13 +652,59 @@ body
 		border-bottom 2px solid transparent
 	&:focus
 		outline none
+.Profile-container
+	margin .5em
+	text-align center
+.Profile-image
+	border 10px solid rgba(black .35)
+	width 10em		
+	border-radius 50%
+	transition all 300ms
+	&:hover
+		opacity .7
 
-
-
-	
-	
-	
-		
+/*paginacion*/
+.pagination
+	color white
+	text-shadow none
+	margin 0
+	padding 0
+	li
+	.disabled
+	.active	
+		border 1px solid rgba(white,0.3)
+		border-right none
+		display inline-block
+		list-style-type none
+		margin-top 1em
+		text-align center
+		&:last-child
+			border-right 1px solid rgba(white,0.3)
+		a
+			color white
+			display block
+			font-weight bold
+			padding .5em .8em
+			text-decoration none
+			transition all 300ms
+			&:hover
+				background-color rgba(white, 0.2)
+	.disabled
+	.active
+		background-color rgba(black, 0.2)
+		span
+			color white
+			display block
+			font-weight bold
+			padding .5em .8em
+			text-decoration none
+			
+			
+					
+				
+				
+			
+			
 @media screen and (min-width:480px)
 	.u-hidden-s
 		display none
@@ -669,6 +727,8 @@ body
 		background-attachment fixed
 		background-size 100% 100%
 		height 3rem
+	.u-td-md
+		display table-cell
 	.Breadcrumb
 		display inline-block
 	.Login-container

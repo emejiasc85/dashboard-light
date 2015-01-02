@@ -22,7 +22,7 @@ function toggleMainMenu() {
 
 //mostramos los submenus del menu principal
 function viewSubMenu(){
-	 $(this).children('.MainMenu-subList').toggle('fast', 'swing');
+	 $(this).children('.MainMenu-subList').slideToggle('fast', 'swing');
 }
 
 

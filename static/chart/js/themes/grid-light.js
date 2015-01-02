@@ -16,23 +16,31 @@ Highcharts.theme = {
 	chart: {
 		backgroundColor: null,
 		style: {
+			color: '#FFF',
+			textShadow: 'none',
 			fontFamily: "Dosis, sans-serif"
 		}
 	},
 	title: {
 		style: {
+			color: '#FFF',
+			textShadow: 'none',
 			fontSize: '16px',
 			fontWeight: 'bold',
 			textTransform: 'uppercase'
 		}
 	},
 	tooltip: {
+		color: '#FFF',
+		textShadow: 'none',
 		borderWidth: 0,
 		backgroundColor: 'rgba(219,219,216,0.8)',
-		shadow: false
+		
 	},
 	legend: {
 		itemStyle: {
+			color: '#FFF',
+			textShadow: 'none',
 			fontWeight: 'bold',
 			fontSize: '13px'
 		}
@@ -41,6 +49,8 @@ Highcharts.theme = {
 		gridLineWidth: 1,
 		labels: {
 			style: {
+				color: '#FFF',
+				textShadow: 'none',
 				fontSize: '12px'
 			}
 		}
@@ -49,17 +59,23 @@ Highcharts.theme = {
 		minorTickInterval: 'auto',
 		title: {
 			style: {
+				color: '#FFF',
+				textShadow: 'none',
 				textTransform: 'uppercase'
 			}
 		},
 		labels: {
 			style: {
+				color: '#FFF',
+				textShadow: 'none',
 				fontSize: '12px'
 			}
 		}
 	},
 	plotOptions: {
 		candlestick: {
+			color: '#FFF',
+			textShadow: 'none',
 			lineColor: '#404048'
 		}
 	},

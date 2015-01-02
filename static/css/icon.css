@@ -22,12 +22,20 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 .icon-graduate2:before {
 	content: "\e61e";
 }
+.icon-address16:before {
+	content: "\e61f";
+}
 .icon-bell6:before {
 	content: "\e618";
+}
+.icon-buy4:before {
+	content: "\e620";
+}
+.icon-calendar48:before {
+	content: "\e621";
 }
 .icon-call10:before {
 	content: "\e61a";
@@ -73,6 +81,9 @@
 }
 .icon-graduate:before {
 	content: "\e606";
+}
+.icon-calendar2:before {
+	content: "\e628";
 }
 .icon-location1:before {
 	content: "\e611";
