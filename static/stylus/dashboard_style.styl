@@ -207,7 +207,7 @@ body
 	background-color rgba(black, .5)
 	color white
 	display inline-block
-	font-size 1.5rem
+	font-size 1.3rem
 	line-height 2.5rem
 	text-align center
 	text-decoration none
@@ -251,14 +251,16 @@ body
 	vertical-align top
 .Notification
 	border-bottom 1px solid rgba(255,255,255,0.1)
-	height 2.59em
-	line-height 2.59em
+	height 2em
+	line-height 2em
 .Page-title
 	display inline-block
 	font-weight 200
 	margin 0
 	margin-left .5em
 	padding 0
+	font-size 1em
+	text-transform uppercase
 .Breadcrumb
 	display none
 	float right
@@ -274,7 +276,7 @@ body
 		padding 0 .5em
 .Breadcrumb-link
 	color white
-	font-size 1em
+	font-size .8em
 	text-decoration none
 	transition .3s color
 	&:hover
@@ -282,8 +284,9 @@ body
 /*short cuts*/
 .ShortCuts-area
 	border-bottom 1px solid rgba(255,255,255,0.1)
-	padding 1em .5em
+	padding .5rem 0 0 0
 	text-shadow none
+	font-size 0
 .ShortCut-link
 	text-decoration none
 	color white
@@ -293,28 +296,29 @@ body
 .ShortCut-item
 	background rgba(black, .35)
 	display inline-block
-	height 5em
+	height 5rem
 	margin-left 1%
 	overflow hidden
 	position relative
 	width 48%
+	margin-bottom 1%	
 	transition .3s background
 	&:hover
 		background rgba(black, .45)
 .ShortCut-count
-	padding-left .2em
-	font-size 2em
+	padding-left .2rem
+	font-size 2rem
 	margin 0
 	font-weight 300
 	font-family monospace
 .ShortCut-description
-	padding-left .2em
-	font-size 1.5em
+	padding-left .2rem
+	font-size 1.5rem
 	margin 0
 .ShortCut-icon
 	color rgba(black, .35)
 	display inline-block
-	font-size 5em
+	font-size 5rem
 	position absolute
 	right 0
 	top 0
@@ -534,13 +538,16 @@ body
 	list-style none
 	margin 0	
 	padding 0
+	text-shadow none
 	//width 100%
 	&:last-child
 		border-bottom none
+	&:first-child
+		border-top 1px solid rgba(white, .3)
 .Info-icon
 	display inline-block
-	font-size 1.5em
-	padding-bottom .5rem
+	font-size 1.2em
+	//padding-bottom .5rem
 	padding-left .5rem
 	padding-top .5rem
 	text-align left
@@ -579,6 +586,26 @@ body
 	margin 0
 	bottom 0em
 	left 4.6em
+	
+.Profile-container
+	background-color rgba(black, .1)
+	margin 0
+	padding 1em 0
+	text-align center
+.Profile-image
+	border 5px solid rgba(black .35)
+	border-radius 50%
+	transition all 300ms
+	width 8em		
+	&:hover
+		opacity .7
+.Profile-name
+	display block
+	font-weight bold
+	margin 0
+	padding 0
+	text-align center
+	text-shadow none
 
 	
 	
@@ -652,16 +679,7 @@ body
 		border-bottom 2px solid transparent
 	&:focus
 		outline none
-.Profile-container
-	margin .5em
-	text-align center
-.Profile-image
-	border 10px solid rgba(black .35)
-	width 10em		
-	border-radius 50%
-	transition all 300ms
-	&:hover
-		opacity .7
+
 
 /*paginacion*/
 .pagination
@@ -738,6 +756,15 @@ body
 		position initial
 	.Header-DropBottom
 		display none
+	.HeaderNav-subItem
+		height 2rem
+		line-height 2rem
+	.HeaderNav-subLink
+	.HeaderNav-subIcon			
+		font-size 1rem
+		line-height 2rem
+		
+	
 	.Content
 		display inline-block
 		position absolute
@@ -751,12 +778,24 @@ body
 	.MainMenu-link
 		color white
 		transition .3s color
+		height 1.95em
+		line-height 1.95em
 		&:hover
 			color amarillo
+	.MainMenu-icon
+	.iconDrop
+		height 1.95rem
+		line-height 1.95rem
+	
 @media screen and (min-width:1000px)
+	.ShortCuts-area
+		padding .5rem 0
 	.ShortCut-item
-		margin-left 1.5%
+		margin-left 2%
+		margin-bottom 0 
 		width 23%
+		&:first-child
+			margin-left .5rem
 	.Login-container
 		margin 3em auto
 		width 35%

@@ -109,34 +109,28 @@
 			</ul>
 		</article>
 		<article class="ShortCuts-area">
-			<a href="#" class="ShortCut-link">
-				<divf class="ShortCut-item">
-					<h2 class="ShortCut-count">526</h2>
-					<p class="ShortCut-description">Redes</p>
-					<span class="ShortCut-icon icon-tree"></span>
-				</divf>	
-			</a>
-			<a href="#" class="ShortCut-link">
-				<article class="ShortCut-item">
-					<h2 class="ShortCut-count">526</h2>
-					<p class="ShortCut-description">Discipulos</p>
-					<span class="ShortCut-icon icon-users"></span>
-				</article>
-			</a>
-			<a href="#" class="ShortCut-link">
-				<article class="ShortCut-item">
-					<h2 class="ShortCut-count">526</h2>
-					<p class="ShortCut-description">Ofrendas</p>
-					<span class="ShortCut-icon icon-coin"></span>
-				</article>
-			</a>
-			<a href="#" class="ShortCut-link">
-				<article class="ShortCut-item">
-					<h2 class="ShortCut-count">526</h2>
-					<p class="ShortCut-description">Estadisticas</p>
-					<span class="ShortCut-icon icon-bars"></span>
-				</article>
-			</a>
+			
+			<article class="ShortCut-item">
+				<h2 class="ShortCut-count">526</h2>
+				<p class="ShortCut-description">Redes</p>
+				<span class="ShortCut-icon icon-tree"></span>
+			</article>	
+			<article class="ShortCut-item">
+				<h2 class="ShortCut-count">526</h2>
+				<p class="ShortCut-description">Discipulos</p>
+				<span class="ShortCut-icon icon-users"></span>
+			</article>
+			<article class="ShortCut-item">
+				<h2 class="ShortCut-count">526</h2>
+				<p class="ShortCut-description">Ofrendas</p>
+				<span class="ShortCut-icon icon-coin"></span>
+			</article>
+			<article class="ShortCut-item">
+				<h2 class="ShortCut-count">526</h2>
+				<p class="ShortCut-description">Estadisticas</p>
+				<span class="ShortCut-icon icon-bars"></span>
+			</article>
+			
 		</article>
 		
 		<div class="col-7">
@@ -275,9 +269,10 @@
 				</table>
 			</article>
 			<article class="Panel">
-				<div id="container"></div>
+				<div id="container" class="Panel-content-dark"></div>
 			</article>
 		</div>
+
 		<div class="col-5">
 			<article class="Panel">
 				<h2 class="Panel-title-dark">Informacion</h2>
@@ -345,12 +340,15 @@
 			</article>
 		</div>
 	</section>
+	
 	<script src="../static/js/jquery-1.11.1.min.js"></script>
+	<script src="../static/js/live.js"></script>
 	<script src="../static/js/dashboard.js"></script>
 	<script src="../static/chart/js/highcharts.js"></script>
 	<script src="../static/chart/js/modules/exporting.js"></script>
+	<script src="../static/chart/js/themes/dark-unica.js"></script>
 
-			
+	
 	<script type="text/javascript">
 		$(function () {
 		    $('#container').highcharts({
