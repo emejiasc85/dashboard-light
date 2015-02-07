@@ -287,13 +287,10 @@ body
 	padding .5rem 0 0 0
 	text-shadow none
 	font-size 0
-.ShortCut-link
-	text-decoration none
-	color white
-	&:active
-		transform scale(.95)
 	
 .ShortCut-item
+	text-decoration none
+	color white
 	background rgba(black, .35)
 	display inline-block
 	height 5rem
@@ -305,6 +302,8 @@ body
 	transition .3s background
 	&:hover
 		background rgba(black, .45)
+	&:active
+		transform scale(.95)
 .ShortCut-count
 	padding-left .2rem
 	font-size 2rem
@@ -409,16 +408,22 @@ body
 	margin 0
 	padding .2rem
 	text-shadow none
+
 .DropDown-link
+	background none
+	border none
 	color black
 	display block
 	height 1.5rem
 	line-height 1.5rem
 	text-decoration none
 	transition .3s text-decoration
+	padding 0
 	&:hover
 		text-decoration underline
-
+		background none
+        border none
+        padding 0
 
 /*forms*/
 .Form
@@ -547,7 +552,6 @@ body
 .Info-icon
 	display inline-block
 	font-size 1.2em
-	//padding-bottom .5rem
 	padding-left .5rem
 	padding-top .5rem
 	text-align left
@@ -559,6 +563,14 @@ body
 	margin 0
 	padding .5em
 	width 85%
+.Info-link
+	color white
+	text-decoration none
+	transition all 300ms
+	&:hover
+		color amarillo
+		font-weight 400
+		text-decoration underline
 .Media-item
 	height 2.5em
 	padding .3em
@@ -570,14 +582,18 @@ body
 	margin 0
 	padding 0 
 .Media-link	
-	position relative
-	display inline-block
 	color white
+	display inline-block
 	height 2.5em
 	line-height 2.5em
-	margin-left .5em
+	margin-left 1em
+	position relative
+	text-decoration none
+	transition all 300ms
 	&:hover
-		text-decoration none
+		color amarillo
+		font-weight 400
+		text-decoration underline
 .Media-info
 	position absolute
 	display inline-block
@@ -585,7 +601,7 @@ body
 	color black
 	margin 0
 	bottom 0em
-	left 4.6em
+	left 5em
 	
 .Profile-container
 	background-color rgba(black, .1)
@@ -594,7 +610,7 @@ body
 	text-align center
 .Profile-image
 	border 5px solid rgba(black .35)
-	border-radius 50%
+	border-radius 50% 50% 50% 0
 	transition all 300ms
 	width 8em		
 	&:hover
